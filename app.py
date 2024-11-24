@@ -40,7 +40,7 @@ def generate_gemini_content(transcript_text,prompt):
 st.title("YouTube Transcript to Detailed Notes Converter")
 youtube_link = st.text_input("Enter YouTube Video Link:")
 
-if youtube_link:
+if youtube_link:  #if the link is provided this block will extract the video id and thumbnail of the video
     video_id = youtube_link.split("=")[1]
     print(video_id)
     st.image(f"http://img.youtube.com/vi/{video_id}/0.jpg", use_column_width=True)
