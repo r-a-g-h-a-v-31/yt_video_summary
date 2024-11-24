@@ -1,7 +1,7 @@
 import streamlit as st
 from dotenv import load_dotenv
 
-load_dotenv() ##load all the environment variables
+load_dotenv() ##load all the environment variables in this case it only contains the api key
 import os
 import google.generativeai as genai
 
